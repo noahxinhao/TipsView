@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TipsView.h"
+#import "TipsView-Swift.h"
 
 @interface ViewController ()
 
@@ -58,5 +59,35 @@
 - (IBAction)dismiss:(id)sender {
     [TipsView dismiss];
 }
+
+
+
+
+- (IBAction)clickShowHUDInWindow:(id)sender {
+    
+    [JProgressHUD showInAppdelegateWindow:@"正在加载..."];
+    [self performSelector:@selector(clickDismissHud:) withObject:nil afterDelay:2];
+}
+
+- (IBAction)clickShowHUDInView:(id)sender {
+
+    [JProgressHUD showInView:self.view text:@"加载中"];
+    [self performSelector:@selector(clickDismissHud:) withObject:nil afterDelay:2];
+}
+
+- (IBAction)clickShowHUDInViewWithShadow:(id)sender {
+    [JProgressHUD showInView:self.view text:@"Shadow" shadow:YES];
+    [self performSelector:@selector(clickDismissHud:) withObject:nil afterDelay:2];
+}
+
+- (IBAction)clickShowHUDInViewCanTouch:(id)sender {
+    
+    [JProgressHUD showInView:self.view text:@"Loading" canTouch:YES];
+}
+
+- (IBAction)clickDismissHud:(id)sender {
+    [JProgressHUD dismissForScale];
+}
+
 
 @end

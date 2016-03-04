@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8ji-QR-w7i">
-                                <rect key="frame" x="13" y="34" width="60" height="30"/>
+                                <rect key="frame" x="13" y="64" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="居中显示"/>
                                 <connections>
@@ -22,7 +22,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0ZX-xz-Esz">
-                                <rect key="frame" x="13" y="158" width="60" height="30"/>
+                                <rect key="frame" x="13" y="188" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="底部显示"/>
                                 <connections>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dmV-2B-vgc">
-                                <rect key="frame" x="13" y="191" width="81" height="30"/>
+                                <rect key="frame" x="13" y="221" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="底部显示 3s"/>
                                 <connections>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gzX-Ro-wmu">
-                                <rect key="frame" x="13" y="65" width="81" height="30"/>
+                                <rect key="frame" x="13" y="95" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="居中显示 3s"/>
                                 <connections>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UAo-Zy-4vr">
-                                <rect key="frame" x="13" y="98" width="173" height="30"/>
+                                <rect key="frame" x="13" y="128" width="173" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="居中显示 3s ,  消失时回调"/>
                                 <connections>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7MP-C2-xML">
-                                <rect key="frame" x="13" y="226" width="169" height="30"/>
+                                <rect key="frame" x="13" y="256" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="底部显示 3s , 消失时回调"/>
                                 <connections>
@@ -62,11 +62,61 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XdA-oM-U6e">
-                                <rect key="frame" x="13" y="281" width="54" height="30"/>
+                                <rect key="frame" x="13" y="311" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="dismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Lk-fD-Ec3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AAN-Lt-UgV">
+                                <rect key="frame" x="253" y="64" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="window上面显示Hud">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickShowHUDInWindow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yq4-Rm-u1h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bg5-G3-f6J">
+                                <rect key="frame" x="276" y="95" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="view上面显示hud">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickShowHUDInView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0RS-kh-rmo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LeG-cu-vF2">
+                                <rect key="frame" x="230" y="190" width="164" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="view上面显示hud Touch">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickShowHUDInViewCanTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdO-ic-Duj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QDF-Pg-ct7">
+                                <rect key="frame" x="312" y="219" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="dismiss hud">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickDismissHud:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hni-bd-6kE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BQJ-hc-5DQ">
+                                <rect key="frame" x="218" y="157" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="view上面显示hud Shadow">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickShowHUDInViewWithShadow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZSb-7j-1Og"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="343.16666666666669"/>
+            <point key="canvasLocation" x="-51" y="314"/>
         </scene>
     </scenes>
 </document>
